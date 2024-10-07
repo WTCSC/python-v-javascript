@@ -13,9 +13,6 @@ def generate_password(length=12):
     password = ''.join(random.choice(characters) for _ in range(length))
     
     return password
-
-# Generate and print a password
-print(generate_password())
 ```
 
 To accomplish this, follow these steps:
@@ -25,3 +22,12 @@ To accomplish this, follow these steps:
 3. Fill out the `generatePassword()` function in the `generate_password.js` file.
 4. Test your JavaScript function to ensure it generates passwords correctly by loading the `index.html` page in the [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) extension.
 5. If you are feeling adventurous, you may also test your JavaScript function using [Jest](https://jestjs.io/).
+
+## Acceptance Criteria
+
+Your new function must observe the following acceptance criteria:
+
+- It **MUST** accept a `length` parameter, with a default value of `12`
+- It **MUST** be called `generatePassword()` and be in the `generate_password.js` file
+- It **MUST** return a random string made up of uppercase letters, lowercase letters, numbers, and/or underscores
+- It **MUST** pass the GitHub Classroom tests (which are run using `Jest`)
